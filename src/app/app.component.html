@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+  Road Trip Weather!
+  </h1>
+<ul>
+  <li>
+    <div>
+      <label>Origin:
+        <input [(ngModel)]="o" placeholder="name">
+      </label>
+  </div>
+  </li>
+  <li>
+    <div>
+      <label>Destination:
+        <input [(ngModel)]="d" placeholder="name">
+      </label>
+  </div>
+  <div>
+    <button (click)="this.getDirections()">Submit</button>
+  </div>
+  </li>
+</ul>
+<div *ngFor="let step of this.directionSteps; let i = index">
+</div>
+</div>
